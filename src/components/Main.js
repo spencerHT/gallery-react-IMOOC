@@ -24,6 +24,7 @@ class AppComponent extends React.Component {
             <section className="img-sec">
             </section>
             <nav className="controller-nav">
+            som
             </nav>
         </section>
     );
