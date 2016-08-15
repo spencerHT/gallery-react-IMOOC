@@ -24,6 +24,7 @@ html, body {
   background-color: #ddd;
   @at-root {
     .img-figure {
+      position: absolute;
       box-sizing: border-box;
       width: 320px;
       height: 360px;
