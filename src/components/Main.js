@@ -100,19 +100,19 @@ class ControllerUnit extends React.Component{
             this.props.inverse();
         }
         else {
-            this.props.center(); 
+            this.props.center();
         }
         e.preventDefault();
         e.stopPropagation();
     }
     render() {
-        let controllerUnitClassName = "controller-unit";
+        let controllerUnitClassName = 'controller-unit';
         // 如果所对应的是居中的图片，显示按钮的居中态
         if (this.props.arrange.isCenter) {
-            controllerUnitClassName += " is-center";
+            controllerUnitClassName += ' is-center';
             // 如果同时对应的是翻转图片，显示控制按钮的翻转态
             if (this.props.arrange.isInverse) {
-                controllerUnitClassName += " is-inverse";
+                controllerUnitClassName += ' is-inverse';
             }
         }
         return (

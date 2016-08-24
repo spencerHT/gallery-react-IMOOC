@@ -26,15 +26,15 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{broswers:["last 2 version"]}'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}'
       },
       {
         test: /\.sass$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{broswers:["last 2 version"]}!sass-loader?outputStyle=expanded&indentedSyntax'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded&indentedSyntax'
       },
       {
         test: /\.scss$/,
-        loader: 'style-loader!css-loader!autoprefixer-loader?{broswers:["last 2 version"]}!sass-loader?outputStyle=expanded'
+        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
       },
       {
         test: /\.less$/,
@@ -49,11 +49,11 @@ function getDefaultModules() {
         loader: 'json-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(png|jpg|gif|woff|woff2|eot|ttf)$/,
         loader: 'url-loader?limit=8192'
       },
       {
-        test: /\.(mp4|ogg)$/,
+        test: /\.(mp4|ogg|svg)$/,
         loader: 'file-loader'
       }
     ]
